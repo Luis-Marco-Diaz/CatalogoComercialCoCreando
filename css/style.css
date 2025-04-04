@@ -49,10 +49,9 @@ Main Components
 .cd-header {
   position: relative;
   height: auto;
-  background: rgb(0,133,135);
   background: linear-gradient(90deg, rgba(0,133,135,1) 0%, rgba(218,39,128,1) 100%);
   line-height: normal;
-  padding: 30px 10px;
+  padding-bottom: 1%;
 }
 .cd-header h1, p {
   color: #ffffff;
@@ -107,7 +106,27 @@ Main Components
     padding-top: 100px;
   }
 }
+.FlexContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  background-color: #ffffff;
+  height: auto;
+  overflow: auto;
+  flex-direction: row;
+}
 
+.FlexContainer div {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  object-fit: cover;
+  height: 100px;
+  padding: 1%;
+  background-color: rgb(255, 255, 255);
+}
 /* -------------------------------- 
 
 xtab-filter 
