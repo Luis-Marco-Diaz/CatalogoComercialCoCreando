@@ -8,7 +8,9 @@
 
 	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<link rel="stylesheet" href="css/modal.css"> <!-- modal style -->
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+	<script src="assets/modals/modal1.js" ></script> <!-- Modal1 -->
   	
 	<title>Catálogo Co Creando AC</title>
 </head>
@@ -51,20 +53,20 @@
 		<section class="cd-gallery">
 			<ul>
 				<!-- LEGADO 48 -->
-				<li class="mix color-1 check1 radio2 option3"><a target="_blank" href="/index.html"><img class="card" src="img/social/CarolinaGonzalez.png" alt="Image 1"></a></li>
-				<li class="mix color-1 check2 radio2 option2"><a target="_blank" href="https://cssgenerator.org/box-shadow-css-generator.html"><img class="card" src="img/social/DanyraMijangos.png" alt="Image 2"></a></li>
-				<li class="mix chocolates color-1 check3 radio3 option1"><a target="_blank" href="https://www.google.com.mx/"><img class="card" src="img/social/JimenaGuillen.png" alt="Image 2"></a></li>
-				<li class="mix  color-1 check3 radio2 option4"><a target="_blank" href="https://www.google.com.mx/"><img class="card" src="img/social/LuisaSosa.png" alt="Image 2"></a></li>
+				<li class="mix color-1 check1 radio2 option3"><a id="abrirModal" style="cursor: pointer;" ><img class="card" src="img/social/CarolinaGonzalez.png" alt="Image 1"></a></li>
+				<li class="mix color-1 check2 radio2 option2"><a href="https://cssgenerator.org/box-shadow-css-generator.html"><img class="card" src="img/social/DanyraMijangos.png" alt="Image 2"></a></li>
+				<li class="mix chocolates color-1 check3 radio3 option1"><a href="https://www.google.com.mx/"><img class="card" src="img/social/JimenaGuillen.png" alt="Image 2"></a></li>
+				<li class="mix  color-1 check3 radio2 option4"><a href="https://www.google.com.mx/"><img class="card" src="img/social/LuisaSosa.png" alt="Image 2"></a></li>
 				<!-- CREACIONES ARCE -->
-				<li class="mix color-2 check1 radio3 option2"><a target="_blank" href="https://www.google.com.mx/"><img class="card" src="img/social/MonserratGonzalez.png" alt="Image 2"></a></li>
-				<li class="mix color-2 check2 radio3 option3"><a target="_blank" href="https://www.google.com.mx/"><img class="card" src="img/social/RocioArce.png" alt="Image 2"></a></li>
-				<li class="mix color-2 check2 radio2 option1"><a target="_blank" href="https://www.google.com.mx/"><img class="card" src="img/social/RosyOchoa.png" alt="Image 2"></a></li>
-				<li class="mix color-2 check1 radio3 option4"><a target="_blank" href="https://www.google.com.mx/"><img class="card" src="img/social/SeleneOlea.png" alt="Image 2"></a></li>
+				<li class="mix color-2 check1 radio3 option2"><a href="https://www.google.com.mx/"><img class="card" src="img/social/MonserratGonzalez.png" alt="Image 2"></a></li>
+				<li class="mix color-2 check2 radio3 option3"><a href="https://www.google.com.mx/"><img class="card" src="img/social/RocioArce.png" alt="Image 2"></a></li>
+				<li class="mix color-2 check2 radio2 option1"><a href="https://www.google.com.mx/"><img class="card" src="img/social/RosyOchoa.png" alt="Image 2"></a></li>
+				<li class="mix color-2 check1 radio3 option4"><a href="https://www.google.com.mx/"><img class="card" src="img/social/SeleneOlea.png" alt="Image 2"></a></li>
 				<!-- RANDOM -->
-				<li class="mix color-1 check1 radio2 option3"><a target="_blank" href="https://www.google.com.mx/"><img class="card" src="img/social/CarolinaGonzalez.png" alt="Image 2"></a></li>
-				<li class="mix color-1 check3 radio2 option4"><a target="_blank" href="https://www.google.com.mx/"><img class="card" src="img/social/DanyraMijangos.png" alt="Image 2"></a></li>
-				<li class="mix color-1 check3 radio3 option2"><a target="_blank" href="https://www.google.com.mx/"><img class="card" src="img/social/MonserratGonzalez.png" alt="Image 2"></a></li>
-				<li class="mix color-2 check1 radio3 option1"><a target="_blank" href="https://www.google.com.mx/"><img class="card" src="img/social/MonserratGonzalez.png" alt="Image 2"></a></li>
+				<li class="mix color-1 check1 radio2 option3"><a href="https://www.google.com.mx/"><img class="card" src="img/social/CarolinaGonzalez.png" alt="Image 2"></a></li>
+				<li class="mix color-1 check3 radio2 option4"><a href="https://www.google.com.mx/"><img class="card" src="img/social/DanyraMijangos.png" alt="Image 2"></a></li>
+				<li class="mix color-1 check3 radio3 option2"><a href="https://www.google.com.mx/"><img class="card" src="img/social/MonserratGonzalez.png" alt="Image 2"></a></li>
+				<li class="mix color-2 check1 radio3 option1"><a href="https://www.google.com.mx/"><img class="card" src="img/social/MonserratGonzalez.png" alt="Image 2"></a></li>
 				<li class="gap"></li>
 				<li class="gap"></li>
 				<li class="gap"></li>
@@ -144,8 +146,41 @@
 			<a href="#0" class="cd-close">Cerrar</a>
 		</div> <!-- cd-filter -->
 
+<!-- Modals Section -->
+<div id="ventanaModal" class="modal">
+	<!-- Modal content -->
+	<div class="modal-content">
+	  <span class="close">&times;</span>
+	  <img class="img-modal" src="/assets/cards/1.png" alt="Hola">
+	</div>
+</div>
+
 		<a href="#0" class="cd-filter-trigger">Filtros</a>
-	</main> <!-- cd-main-content -->
+</main> <!-- cd-main-content -->
+
+<script>
+	// Ventana modal
+var modal = document.getElementById("ventanaModal");
+// Botón que abre el modal
+var boton = document.getElementById("abrirModal");
+// Hace referencia al elemento <span> que tiene la X que cierra la ventana
+var span = document.getElementsByClassName("close")[0];
+// Cuando el usuario hace clic en el botón, se abre la ventana
+boton.addEventListener("click",function() {
+  modal.style.display = "block";
+});
+// Si el usuario hace clic en la x, la ventana se cierra
+span.addEventListener("click",function() {
+  modal.style.display = "none";
+});
+// Si el usuario hace clic fuera de la ventana, se cierra.
+window.addEventListener("click",function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+});
+
+</script>
 <script src="js/jquery-2.1.1.js"></script>
 <script src="js/jquery.mixitup.min.js"></script>
 <script src="js/main.js"></script> <!-- Resource jQuery -->
