@@ -115,17 +115,24 @@ Main Components
   background-color: #ffffff52;
   height: auto;
   overflow: auto;
-  flex-direction: row;
+  width: 100%;
 }
 
 .FlexContainer div {
   display: flex;
+  flex: 1;
   justify-content: center;
   box-sizing: border-box;
   object-fit: cover;
   height: 100px;
   padding: 1%;
 }
+@media (width <= 450px) {
+ .FlexContainer div {
+  height: 60px;
+ }
+ }
+
 /* -------------------------------- 
 
 xtab-filter 
