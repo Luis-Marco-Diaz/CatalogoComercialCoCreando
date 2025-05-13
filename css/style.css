@@ -206,9 +206,10 @@ xtab-filter
   display: block;
   /* set same size of the .cd-tab-filter */
   height: 50px;
-  width: 140px;
+  width: 150px;
   line-height: 50px;
   padding-left: 14px;
+  overflow: hidden;
 }
 .cd-tab-filter a.selected {
   background: #41307c;
@@ -682,4 +683,29 @@ xcustom form elements
   .cd-filter-block .cd-select::after {
     display: none;
   }
+}
+
+/* FOOTER */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+  background-color: white;
+  color: #222222;
+}
+.footer p {
+  color: #222222;
+  font-size: medium;
+}
+.footer img {
+  width: 10vh;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1rem;
+  padding-top: 2%;
 }
