@@ -55,7 +55,7 @@
 			</div> <!-- cd-tab-filter -->
 		</div> <!-- cd-tab-filter-wrapper -->
 
-		<section class="cd-gallery">
+		<section id="listado-articulos" class="cd-gallery">
 			<ul>
 				<!-- LEGADO 48 -->
 				<li class="gomitas mix alimentos oaxaca 300"><a href=""><img class="card" src="img/Legado/Legado1.png" alt="Gomitas de Mezcal Con Maracuyá"></a></li>
@@ -178,7 +178,9 @@
 				<li class="adorno mix artesania campeche 300"><a href=""><img class="card" src="img/Hunab/26-Hanab.png" alt="Image"></a></li>
 				<li class="adorno mix artesania campeche 300"><a href=""><img class="card" src="img/Hunab/27-Hanab.png" alt="Image"></a></li>
 				<li class="adorno mix artesania campeche 300"><a href=""><img class="card" src="img/Hunab/28-Hanab.png" alt="Image"></a></li>
-
+				<!-- PECOREANDO -->
+				 <li class="perlitas mix alimentos yucatan 300"><a href=""><img class="card" src="img/Pecoreando/10-Pecoreando.png" alt=""></a></li>
+				 <li class="instalacion mix servicio yucatan masdemil"><a href=""><img class="card" src="img/Pecoreando/11-Pecoreando.png" alt=""></a></li>
 				<!-- GAPS -->
 				<li class="gap"></li>
 				<li class="gap"></li>
@@ -210,12 +212,24 @@
 			    			<label class="checkbox-label" for="checkbox1">Ciudad de México</label>
 						</li>
 						<li>
+							<input class="filter" data-filter=".coahuila" type="checkbox" id="checkbox1">
+			    			<label class="checkbox-label" for="checkbox1">Coahuila</label>
+						</li>
+						<li>
+							<input class="filter" data-filter=".edomex" type="checkbox" id="checkbox3">
+							<label class="checkbox-label" for="checkbox3">Edo. Mex.</label>
+						</li>
+						<li>
 							<input class="filter" data-filter=".guerrero" type="checkbox" id="checkbox3">
 							<label class="checkbox-label" for="checkbox3">Guerrero</label>
 						</li>
 						<li>
 							<input class="filter" data-filter=".morelos" type="checkbox" id="checkbox2">
 							<label class="checkbox-label" for="checkbox2">Morelos</label>
+						</li>
+						<li>
+							<input class="filter" data-filter=".nuevoleon" type="checkbox" id="checkbox2">
+							<label class="checkbox-label" for="checkbox2">Nuevo León</label>
 						</li>
 						<li>
 							<input class="filter" data-filter=".oaxaca" type="checkbox" id="checkbox2">
@@ -286,8 +300,21 @@
 </div>
 
 		<a href="#0" class="cd-filter-trigger">Filtros</a>
-</main> <!-- cd-main-content -->
-<section class="footer">
+	</main> <!-- cd-main-content -->
+	<section class="FlexContainer" style="flex-direction: column;">
+		<h2>Más productos...</h2>
+		<div class="pagination">
+  			
+  			<a href="/index.html" class="active">1</a>
+  			<a href="/2.html">2</a>
+  			<a href="/index.html">3</a>
+  			<a href="/index.html">4</a>
+  			<a href="/index.html">5</a>
+ 			<a href="/index.html">6</a>
+  			
+		</div>
+	</section>
+	<section class="footer">
 	<div>
 		<h2>Agradecemos a nuestros Aliados y Donadores</h2>
 	</div>
@@ -298,7 +325,7 @@
 	<div>
 		<p>© Copyright Co Creando la Innovación y Sustentabilidad AC 2025</p>
 	</div>
-</section>
+	</section>
 
 <script>
 	// Ventana modal
